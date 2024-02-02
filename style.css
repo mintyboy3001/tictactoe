@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.cell {
+  background-color: #3535ec;
+}
+
+.game {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-auto-rows: 200px;
+  gap: 10px;
+  margin: auto;
+  position: relative;
+  width: 620px;
+  margin-top: 50px;
+}
+
+.symbol {
+  color: white;
+  font-size: 185px;
+  text-align: center;
+}
+
+.banner {
+  position: absolute;
+  background-color: red;
+  width: 140%;
+  height: 60px;
+  margin-left: -140px;
+  margin-top: 45%;
+  opacity: 75%;
+}
+
+.banner h1 {
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+.slidecontainer {
+  width: 100%;
+  text-align: center
+}
+
+.slider {
+  width: 25%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #04AA6D;
+  cursor: pointer;
+}
